@@ -41,6 +41,5 @@ body {
   background-color: white;
   &.profile{
     margin-inline: calc((100% - 824px) / 2);
-    background-color: antiquewhite;
   }
 }
