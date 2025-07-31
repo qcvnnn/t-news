@@ -1,0 +1,46 @@
+@import "theme.css";
+@import "inputs.css";
+@import "buttons.css";
+@import "login.css";
+@import "registration.css";
+@import "profile.css";
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.header {
+  flex: 0 0 64px;
+  background:
+  linear-gradient(var(--header-stripe), var(--header-stripe)) no-repeat center bottom/824px 2px,
+  var(--header-main);
+  display: grid;
+  grid-template-columns: calc((100% - 824px) / 2) auto 2% 1fr auto calc((100% - 824px) / 2);
+  align-items: center;
+}
+.logo {
+  grid-column: 2;
+}
+.searcher {
+  grid-column: 4;
+}
+.logout-icons{
+    grid-column: 5;
+}
+
+.content {
+  flex: 1 0 auto;
+  display: flex;
+  background-color: white;
+  &.profile{
+    margin-inline: calc((100% - 824px) / 2);
+    background-color: antiquewhite;
+  }
+}

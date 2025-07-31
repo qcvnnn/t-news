@@ -1,0 +1,26 @@
+.profile-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 185px;
+    width: 128px;
+    margin-top: 5vh;
+
+}
+.profile-name{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+.profile-info{
+    padding-left: 2vw;
+    margin-top: 3vh;
+    flex: 1 1 auto;
+    max-width: 551px;
+    font-size: 15px;
+}
+.profile-description{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
